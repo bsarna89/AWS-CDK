@@ -20,10 +20,12 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
+    "@aws-amplify/auth": "^6.3.2",
     "@aws-sdk/client-dynamodb": "^3.577.0",
     "@aws-sdk/client-s3": "^3.577.0",
     "@aws-sdk/util-dynamodb": "^3.577.0",
     "@types/uuid": "^9.0.8",
+    "aws-amplify": "^6.3.2",
     "uuid": "^9.0.1"
   }
 }
