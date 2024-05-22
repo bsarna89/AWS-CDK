@@ -1,5 +1,5 @@
 import { Fn, Stack } from "aws-cdk-lib";
-import { APIGatewayProxyEvent } from "aws-lambda";
+import { APIGatewayProxyEvent, APIGatewayProxyResult } from "aws-lambda";
 
 
 export function getSuffixFromStack(stack: Stack){
@@ -16,3 +16,12 @@ export function hasAdminGroup(event: APIGatewayProxyEvent){
     }
     return false
 }
+
+
+export function addCorsHeader(arg: APIGatewayProxyResult){
+    if(!arg.headers){
+        arg.headers = {}
+    }
+    arg.headers['Access-Control-Allow-Origin'] ='*';
+    arg.headers['Access-Control-Allow-Methods'] ='*'; 
+ }

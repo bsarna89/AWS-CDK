@@ -8,6 +8,7 @@ import { postSpaces } from "./PostSpaces";
 import { getSpaces } from "./GetSpaces";
 import { updateSpaces } from "./UpdateSpaces";
 import { deleteSpaces } from "./DeleteSpaces";
+import { addCorsHeader } from "../../infra/Utils";
 
 const ddbCleint = new DynamoDBClient({});
 
@@ -17,19 +18,24 @@ async function handler(
 ): Promise<APIGatewayProxyResult> {
   let message: string;
 
+
   try {
     switch (event.httpMethod) {
       case "GET":
-        const getResponse = getSpaces(event, ddbCleint);
+        const getResponse = await getSpaces(event, ddbCleint);
+        addCorsHeader(getResponse);
         return getResponse;
       case "POST":
-        const postResponse = postSpaces(event, ddbCleint);
+        const postResponse = await postSpaces(event, ddbCleint);
+        addCorsHeader(postResponse);
         return postResponse;
       case "PUT":
-        const updateResponse = updateSpaces(event, ddbCleint);
+        const updateResponse = await updateSpaces(event, ddbCleint);
+        addCorsHeader(updateResponse);
         return updateResponse;
       case "DELETE":
-        const deleteResponse = deleteSpaces(event,ddbCleint)
+        const deleteResponse = await deleteSpaces(event,ddbCleint);
+        addCorsHeader(deleteResponse);
         return deleteResponse;
       default:
         break;

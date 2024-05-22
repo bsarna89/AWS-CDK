@@ -1,0 +1,21 @@
+{
+  "DataStack": {
+    "ExportsOutputRefSpacesTable8A9973559FB4B87D": "SpaceTable-0aed1f449fff",
+    "ExportsOutputFnGetAttSpacesTable8A997355Arn242927FE": "arn:aws:dynamodb:eu-west-1:452516188888:table/SpaceTable-0aed1f449fff"
+  },
+  "AuthStack": {
+    "ExportsOutputFnGetAttSpaceUserPool6AB542DCArnC2E21F85": "arn:aws:cognito-idp:eu-west-1:452516188888:userpool/eu-west-1_9JCANIDSi",
+    "SpacesIdentityPoolClientId": "eu-west-1:3accabd8-aa5c-40da-b3a4-9b596cde97b5",
+    "SpaceUserPoolId": "eu-west-1_9JCANIDSi",
+    "SpacesUserPoolClientId": "5mvvkcquj9se4nlkpssvbmia99"
+  },
+  "LambdaStack": {
+    "ExportsOutputFnGetAttSpacesLambdaA5F923A4ArnE59FF2BB": "arn:aws:lambda:eu-west-1:452516188888:function:LambdaStack-SpacesLambdaA5F923A4-IcdgVLSYWR5s"
+  },
+  "ApiStack": {
+    "SpacesApiEndpoint36C4F3B6": "https://dy06fbogc0.execute-api.eu-west-1.amazonaws.com/prod/"
+  },
+  "UiDeploymentStack": {
+    "SpaceFinderUrl": "dh5bglrse1p56.cloudfront.net"
+  }
+}
