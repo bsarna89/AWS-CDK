@@ -1,21 +1,23 @@
 {
-  "DataStack": {
-    "ExportsOutputRefSpacesTable8A9973559FB4B87D": "SpaceTable-0aed1f449fff",
-    "ExportsOutputFnGetAttSpacesTable8A997355Arn242927FE": "arn:aws:dynamodb:eu-west-1:452516188888:table/SpaceTable-0aed1f449fff"
+  "UiDeploymentStack": {
+    "SpaceFinderUrl": "d193hkjcpuddaa.cloudfront.net"
   },
-  "AuthStack": {
-    "ExportsOutputFnGetAttSpaceUserPool6AB542DCArnC2E21F85": "arn:aws:cognito-idp:eu-west-1:452516188888:userpool/eu-west-1_9JCANIDSi",
-    "SpacesIdentityPoolClientId": "eu-west-1:3accabd8-aa5c-40da-b3a4-9b596cde97b5",
-    "SpaceUserPoolId": "eu-west-1_9JCANIDSi",
-    "SpacesUserPoolClientId": "5mvvkcquj9se4nlkpssvbmia99"
+  "DataStack": {
+    "ExportsOutputFnGetAttSpaceFinderPhotosE708E252Arn354BE01C": "arn:aws:s3:::space-finder-photos-0698c7996995",
+    "ExportsOutputRefSpacesTable8A9973559FB4B87D": "SpaceTable-0698c7996995",
+    "SpaceFinderPhotosBucketName": "space-finder-photos-0698c7996995",
+    "ExportsOutputFnGetAttSpacesTable8A997355Arn242927FE": "arn:aws:dynamodb:eu-west-1:452516188888:table/SpaceTable-0698c7996995"
   },
   "LambdaStack": {
-    "ExportsOutputFnGetAttSpacesLambdaA5F923A4ArnE59FF2BB": "arn:aws:lambda:eu-west-1:452516188888:function:LambdaStack-SpacesLambdaA5F923A4-IcdgVLSYWR5s"
+    "ExportsOutputFnGetAttSpacesLambdaA5F923A4ArnE59FF2BB": "arn:aws:lambda:eu-west-1:452516188888:function:LambdaStack-SpacesLambdaA5F923A4-K8kLCSUK8UPS"
+  },
+  "AuthStack": {
+    "ExportsOutputFnGetAttSpaceUserPool6AB542DCArnC2E21F85": "arn:aws:cognito-idp:eu-west-1:452516188888:userpool/eu-west-1_zL3lall4d",
+    "SpacesIdentityPoolId": "eu-west-1:c92504c4-31a5-4f61-b4c5-3199c25c2463",
+    "SpaceUserPoolId": "eu-west-1_zL3lall4d",
+    "SpacesUserPoolClientId": "5vpahbuf0n0a066u0cdl9k7oqf"
   },
   "ApiStack": {
-    "SpacesApiEndpoint36C4F3B6": "https://dy06fbogc0.execute-api.eu-west-1.amazonaws.com/prod/"
-  },
-  "UiDeploymentStack": {
-    "SpaceFinderUrl": "dh5bglrse1p56.cloudfront.net"
+    "SpacesApiEndpoint36C4F3B6": "https://xv77yhsfl0.execute-api.eu-west-1.amazonaws.com/prod/"
   }
 }

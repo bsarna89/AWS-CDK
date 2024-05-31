@@ -4,8 +4,12 @@ import NavBar from './components/NavBAr';
 import { useState } from 'react';
 import LogingComp from './components/LoginComp';
 import { AuthService } from './services/AuthService';
+import { DataService } from './services/DataService';
+import CreateSpace from './components/spaces/CreateSpace';
+import Spaces from './components/spaces/Spaces';
 
 const authService = new AuthService();
+const dataService = new DataService(authService);
 
 function App() {
 
@@ -34,11 +38,11 @@ function App() {
         },
         {
           path: "/createSpace",
-          element: <div> Create Space</div>
+          element: <CreateSpace dataService={dataService} />
         },
         {
           path: "/spaces",
-          element: <div> Spaces</div>
+          element: <Spaces dataService={dataService}/>
         },
       ]
     }
