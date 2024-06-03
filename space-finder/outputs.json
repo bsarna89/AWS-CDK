@@ -1,12 +1,12 @@
 {
-  "UiDeploymentStack": {
-    "SpaceFinderUrl": "d193hkjcpuddaa.cloudfront.net"
-  },
   "DataStack": {
     "ExportsOutputFnGetAttSpaceFinderPhotosE708E252Arn354BE01C": "arn:aws:s3:::space-finder-photos-0698c7996995",
     "ExportsOutputRefSpacesTable8A9973559FB4B87D": "SpaceTable-0698c7996995",
     "SpaceFinderPhotosBucketName": "space-finder-photos-0698c7996995",
     "ExportsOutputFnGetAttSpacesTable8A997355Arn242927FE": "arn:aws:dynamodb:eu-west-1:452516188888:table/SpaceTable-0698c7996995"
+  },
+  "UiDeploymentStack": {
+    "SpaceFinderUrl": "d193hkjcpuddaa.cloudfront.net"
   },
   "LambdaStack": {
     "ExportsOutputFnGetAttSpacesLambdaA5F923A4ArnE59FF2BB": "arn:aws:lambda:eu-west-1:452516188888:function:LambdaStack-SpacesLambdaA5F923A4-K8kLCSUK8UPS"
