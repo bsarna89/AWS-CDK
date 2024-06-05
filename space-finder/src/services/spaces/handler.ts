@@ -14,6 +14,9 @@ import { captureAWSv3Client, /* getSegment */ } from "aws-xray-sdk-core";
 
 const ddbCleint = captureAWSv3Client(new DynamoDBClient({}));
 
+// Use for test purpose
+// const ddbCleint= new DynamoDBClient({});
+
 // const subSeg = getSegment().addNewSubsegment("My LONG CALL");
 // await new Promise(resolve => {setTimeout(resolve, 300)});
 // subSeg.close();
