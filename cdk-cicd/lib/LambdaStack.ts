@@ -14,14 +14,14 @@ export class LambdaStack extends Stack {
     constructor(scope: Construct, id: string, props: LambdaStackProps) {
         super(scope, id, props)
 
-        new NodejsFunction(this, 'hello-lambda', {
-            runtime: Runtime.NODEJS_18_X,
-            handler: 'handler',
-            entry: (join(__dirname, '..', 'services', 'hello.ts')),
-            environment: {
-                STAGE: props.stageName!
-            }
-        })
+        // new NodejsFunction(this, 'hello-lambda', {
+        //     runtime: Runtime.NODEJS_18_X,
+        //     handler: 'handler',
+        //     entry: (join(__dirname, '..', 'services', 'hello.ts')),
+        //     environment: {
+        //         STAGE: props.stageName!
+        //     }
+        // })
 
 
     }
